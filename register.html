@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw | 註冊</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>準備新朋友資料...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="auth-layout">
+    <section class="auth-card glass fade-in">
+      <p class="eyebrow">Join PawPaw</p>
+      <h1>建立你的毛孩帳號</h1>
+      <form id="registerForm" class="stack-form">
+        <label>使用者 ID<input name="id" required pattern="[A-Za-z0-9_]{3,16}" placeholder="3-16 字，英文數字或底線"></label>
+        <label>使用者名稱<input name="name" required placeholder="例如: 奶茶媽"></label>
+        <label>密碼<input name="password" type="password" minlength="4" required placeholder="至少 4 個字"></label>
+        <label>個人簡介<textarea name="bio" rows="3" placeholder="分享你和毛孩的小故事（選填）"></textarea></label>
+        <label class="file-card">
+          <input id="avatarInput" name="avatar" type="file" accept="image/*">
+          <span>📷 上傳頭貼</span>
+          <img id="avatarPreview" alt="頭貼預覽">
+        </label>
+        <button class="primary-btn" type="submit">完成註冊</button>
+      </form>
+      <p class="switch-link">已經有帳號？<a href="login.html">前往登入</a></p>
+    </section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>

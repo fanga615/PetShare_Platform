@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw | 個人首頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>整理你的日常...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="page-shell">
+    <section id="profileSummary" class="profile-hero glass fade-in"></section>
+    <section class="profile-actions fade-in">
+      <button class="primary-btn" data-link="create-post.html">＋ 新增貼文</button>
+      <button class="soft-btn" data-link="index.html">前往分享區</button>
+      <button id="editProfileBtn" class="soft-btn">編輯個人資料</button>
+      <button id="logoutBtnHome" class="danger-btn">登出</button>
+    </section>
+    <h2 class="section-title">我的貼文</h2>
+    <section id="myPostList" class="post-list"></section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>

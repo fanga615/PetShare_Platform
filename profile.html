@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw | 公開個人頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>拜訪毛孩小窩...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="page-shell">
+    <section id="publicProfile" class="profile-hero glass fade-in"></section>
+    <section class="profile-actions fade-in">
+      <button class="soft-btn" data-link="index.html">返回分享區</button>
+      <button id="followBtn" class="primary-btn auth-only">追蹤</button>
+    </section>
+    <h2 class="section-title">公開貼文牆</h2>
+    <section id="profilePostList" class="post-list"></section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>

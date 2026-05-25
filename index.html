@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw 毛孩日常 | 分享區</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="feed">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>正在召喚毛孩日常...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="page-shell">
+    <section class="feed-hero glass fade-in">
+      <div>
+        <p class="eyebrow">PawPaw 公開分享區</p>
+        <h1>今天也一起收集毛茸茸的小幸福</h1>
+        <p>看看大家的寵物日記、交換照護靈感，按讚與留言需要登入，瀏覽永遠開放。</p>
+      </div>
+      <button class="primary-btn auth-only" data-link="create-post.html">＋ 分享毛孩日常</button>
+    </section>
+    <section class="toolbar glass fade-in">
+      <label class="search-box">
+        <span>🔎</span>
+        <input id="searchInput" type="search" placeholder="搜尋 ID、主題、內容或 Tag">
+      </label>
+      <div class="tag-row" id="tagFilters"></div>
+    </section>
+    <section id="postList" class="post-list" aria-live="polite"></section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>

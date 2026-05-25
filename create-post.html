@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw | 新增貼文</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>準備發文紙筆...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="page-shell narrow">
+    <section class="compose-card glass fade-in">
+      <div id="composeUser" class="compose-user"></div>
+      <form id="postForm" class="stack-form">
+        <label>發布主題<input name="title" required maxlength="40" placeholder="今天想分享什麼可愛瞬間？"></label>
+        <label>發布內容<textarea name="content" required rows="6" maxlength="800" placeholder="寫下毛孩的故事、照護心得或日常小事..."></textarea></label>
+        <label>寵物分類 Tag
+          <select name="tag" required>
+            <option value="狗狗">狗狗</option>
+            <option value="貓咪">貓咪</option>
+            <option value="兔子">兔子</option>
+            <option value="鳥類">鳥類</option>
+            <option value="其他">其他</option>
+          </select>
+        </label>
+        <div id="dropZone" class="drop-zone">
+          <input id="postImageInput" type="file" accept="image/*">
+          <div>
+            <strong>拖曳圖片到這裡</strong>
+            <span>或點擊上傳，系統會自動壓縮圖片</span>
+          </div>
+          <img id="postImagePreview" alt="貼文圖片預覽">
+        </div>
+        <div class="form-actions">
+          <button class="soft-btn" type="button" data-link="home.html">返回首頁</button>
+          <button class="primary-btn" type="submit">發布</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>

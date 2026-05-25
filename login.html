@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPaw | 登入</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="login">
+  <div id="loading" class="loading-screen"><div class="loader-paw">🐾</div><p>準備登入小窩...</p></div>
+  <header id="navbar" class="topbar"></header>
+  <main class="auth-layout">
+    <section class="auth-card glass fade-in">
+      <p class="eyebrow">Welcome back</p>
+      <h1>登入 PawPaw</h1>
+      <form id="loginForm" class="stack-form">
+        <label>使用者 ID<input name="id" required autocomplete="username" placeholder="例如: momo_cat"></label>
+        <label>密碼<input name="password" type="password" required autocomplete="current-password" placeholder="輸入密碼"></label>
+        <button class="primary-btn" type="submit">登入</button>
+      </form>
+      <p class="switch-link">還沒有帳號？<a href="register.html">註冊一個毛孩小窩</a></p>
+    </section>
+  </main>
+  <div id="toastHost" class="toast-host"></div>
+  <div id="modalHost"></div>
+  <script src="script.js"></script>
+</body>
+</html>
